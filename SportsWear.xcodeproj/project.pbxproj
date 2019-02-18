@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0AD18951221B1AF900054B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD18950221B1AF900054B8D /* AppDelegate.swift */; };
-		0AD18953221B1AF900054B8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD18952221B1AF900054B8D /* ViewController.swift */; };
+		0AD18953221B1AF900054B8D /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD18952221B1AF900054B8D /* CategoriesVC.swift */; };
 		0AD18956221B1AF900054B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD18954221B1AF900054B8D /* Main.storyboard */; };
 		0AD18958221B1AFB00054B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD18957221B1AFB00054B8D /* Assets.xcassets */; };
 		0AD1895B221B1AFB00054B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD18959221B1AFB00054B8D /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		0AD1894D221B1AF900054B8D /* SportsWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD18950221B1AF900054B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AD18952221B1AF900054B8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0AD18952221B1AF900054B8D /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		0AD18955221B1AF900054B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AD18957221B1AFB00054B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AD1895A221B1AFB00054B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,47 @@
 		0AD1894F221B1AF900054B8D /* SportsWear */ = {
 			isa = PBXGroup;
 			children = (
-				0AD18950221B1AF900054B8D /* AppDelegate.swift */,
-				0AD18952221B1AF900054B8D /* ViewController.swift */,
-				0AD18954221B1AF900054B8D /* Main.storyboard */,
+				0AD18965221B1B6400054B8D /* Model */,
+				0AD18964221B1B6200054B8D /* View */,
+				0AD18963221B1B5F00054B8D /* Controller */,
+				0AD18962221B1B5C00054B8D /* Supporting Files */,
+			);
+			path = SportsWear;
+			sourceTree = "<group>";
+		};
+		0AD18962221B1B5C00054B8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				0AD18957221B1AFB00054B8D /* Assets.xcassets */,
 				0AD18959221B1AFB00054B8D /* LaunchScreen.storyboard */,
 				0AD1895C221B1AFB00054B8D /* Info.plist */,
 			);
-			path = SportsWear;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AD18963221B1B5F00054B8D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0AD18952221B1AF900054B8D /* CategoriesVC.swift */,
+				0AD18950221B1AF900054B8D /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0AD18964221B1B6200054B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AD18954221B1AF900054B8D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0AD18965221B1B6400054B8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = ../Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD18953221B1AF900054B8D /* ViewController.swift in Sources */,
+				0AD18953221B1AF900054B8D /* CategoriesVC.swift in Sources */,
 				0AD18951221B1AF900054B8D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +317,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VV5BQ776YB;
-				INFOPLIST_FILE = SportsWear/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SportsWear/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +335,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VV5BQ776YB;
-				INFOPLIST_FILE = SportsWear/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SportsWear/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
